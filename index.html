@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat's Cradle</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div id="overlay">
+    <h1>Cat's Cradle</h1>
+    <div id="roomSetup">
+      <input type="text" id="playerName" placeholder="Your Name"/>
+      <input type="text" id="playerColor" placeholder="Your Color (e.g. #ffcc00)"/>
+      <button id="createRoomBtn">Create Room</button><br><br>
+      <input type="text" id="joinCode" placeholder="Room Code"/>
+      <button id="joinRoomBtn">Join Room</button>
+    </div>
+
+    <div id="gameInfo" style="display:none;">
+      <p>Room Code: <span id="displayRoomCode"></span></p>
+      <p>Current Player: <span id="currentPlayer"></span></p>
+      <p>Largest Loop: <span id="largestLoop"></span></p>
+    </div>
+  </div>
+
+  <!-- Three.js and OrbitControls from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.154.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
