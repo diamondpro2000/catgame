@@ -20,7 +20,7 @@ const roomSetupDiv = document.getElementById('roomSetup');
 
 // Replace this with the server URL once you set up the Node.js server on Render
 // For now, leave it empty or local:
-let serverUrl = "wss://YOUR-RENDER-URL"; // e.g. wss://cats-cradle-server.onrender.com
+let serverUrl = "https://catgame-server.onrender.com"; 
 
 createRoomBtn.addEventListener('click', () => {
   playerName = playerNameInput.value.trim() || "Player";
