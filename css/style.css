@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  background: #202020;
+  color: #fff;
+}
+
+#overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+input, button {
+  margin: 5px 0;
+  display: block;
+}
